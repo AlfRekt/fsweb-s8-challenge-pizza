@@ -1,0 +1,118 @@
+footer {
+  height: 561.25px;
+  background-color: #1A1A1A;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  font-family: Barlow;
+  width: 100%;
+}
+
+.footer-content {
+  position: relative;
+  width: 1072px;
+  margin: auto 0;
+  justify-content: space-between;
+}
+
+.footer-content ul {
+  list-style: none;
+  margin: 3rem auto;
+  font-size: 18px;
+}
+
+.footer-content .footer-menu-section ul {
+  margin-block-start: 2rem;
+}
+
+.footer-content .contacts-section {
+  width: 306px;
+}
+
+.footer-content .contacts-section li {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-content .footer-menu-section {
+  width: 306px;
+  height: 321.45px;
+  transform: translateY(68.91px);
+}
+
+.footer-content .footer-menu-section li {
+  margin-top: 1rem;
+}
+
+.footer-content .instagram-section {
+  width: 347px;
+  transform: translateY(68.91px);
+  gap: 40px;
+}
+
+.footer-content .instagram-section .pics {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.copyright-section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 89.8px;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.copyright {
+  width: 1072px;
+  justify-content: space-between;
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  footer {
+    height: auto;
+    padding: 65px 0 0;
+  }
+
+  .footer-content {
+    width: 350px;
+    flex-direction: column;
+    margin: 30px auto 0;
+  }
+
+  .footer-content > div {
+    width: 100%;
+    text-align: flex-start;
+  }
+
+  .footer-content .contacts-section li {
+    justify-content: flex-start;
+  }
+
+  .footer-content .footer-menu-section {
+    transform: translateY(0px);
+  }
+
+  .instagram-section {
+    transform: translateY(0px) !important;
+    margin-bottom: 60px;
+  }
+
+  .instagram-section .pics {
+    justify-content: center;
+  }
+
+  .copyright-section {
+    width: 350px;
+  }
+
+  .copyright {
+    width: 100%;
+    align-items: center;
+  }
+}

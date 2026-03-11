@@ -1,0 +1,567 @@
+.siparis-header {
+    background-color: var(--color-red, #ce2829);
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 160px;
+    
+}
+
+.siparis-logo {
+    margin: 0;
+    height: 44px;
+    width: auto;
+}
+
+.pizza-ozet{
+    background-color: var(--color-beige);
+    width: 100vw;
+    align-items: center;
+}
+
+.wrapper{
+    width: 100%;
+    max-width: 532px;
+    margin: 0 auto;
+    padding: 0 24px 0;
+    align-items: center;
+}
+
+.pizza-form-banner {
+    transform: translateX(-52px);
+    width: 581px;
+    height: 290px;
+    object-fit: cover;
+}
+
+.breadcrumb-bar {
+    background-color: transparent;
+    width: 100%;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+.breadcrumb-icerik {
+    padding: 0;
+    text-align: left;
+    font-family: Barlow, sans-serif;
+    font-size: 13px;
+    color: var(--color-gray-light, #5f5f5f);
+}
+
+.bc-ayrac {
+    margin: 0 4px;
+    color: var(--color-gray-light, #5f5f5f);
+}
+
+.activePageName {
+    color: var(--color-red, #ce2829);
+    font-weight: 700;
+}
+
+.siparisPage {
+    background-color: white;
+    min-height: 100vh;
+    font-family: Barlow, sans-serif;
+}
+
+.siparis-content {
+    width: 100%;
+    max-width: 532px;
+    margin: 0 auto;
+    padding: 0 24px 48px;
+    align-items: center;
+}
+
+.pizza-baslik {
+    font-family: Barlow, serif;
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--color-gray-dark, #292929);
+    margin-bottom: 28px;
+    margin-top: 16px;
+}
+
+.siparis-info {
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 28px;
+    padding-bottom: 20px;
+}
+
+.siparis-info-numbers{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+}
+
+.pizza-fiyat {
+    font-family: Barlow, sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    color: var(--color-gray-dark, #292929);
+    flex-grow: 1;
+}
+
+.rating,
+.commentCount {
+    font-family: Barlow, sans-serif;
+    font-size: 16px;
+    color: var(--color-gray-light, #5f5f5f);
+}
+
+.siparis-info-content {
+    width: 100%;
+    font-family: Barlow, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--color-gray-light, #5f5f5f);
+    line-height: 28.8px;
+    margin-top: 4px;
+}
+
+.secimler-alani {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding-top: 36px;
+    margin-bottom: 24px;
+}
+
+.sol-panel {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-shrink: 0;
+}
+
+.red-pointer{
+    color: var(--color-red);
+}
+
+.siparis-boyut h2,
+.siparis-kalinlik h2,
+.siparis-ek h2 {
+    font-family: Barlow, sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--color-gray-dark, #292929);
+    margin-bottom: 10px;
+}
+
+.siparis-boyut {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.siparis-boyut-secim{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+/* Pill buton — gerçek radio gizlenir, tüm görsel label üzerinden */
+.radio-label {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 0 16px;
+    border-radius: 50%;
+    min-width: 56px;
+    height: 56px;
+    background-color: var(--color-beige, #faf9f6);
+    transition: border-color 0.2s, background-color 0.2s, color 0.2s;
+    user-select: none;
+}
+
+/* data-label içeriği pseudo-element ile render edilir */
+.radio-label::before {
+    content: attr(data-label);
+    font-family: Barlow, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--color-gray-dark, #292929);
+    transition: color 0.2s;
+    pointer-events: none;
+}
+
+/* Gerçek radio input tamamen gizlenir — erişilebilirlik için DOM'da kalır */
+.radio-label input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    pointer-events: none;
+}
+
+/* Hover: sarı border */
+.radio-label:hover {
+    border-color: var(--color-yellow, #fdc913);
+}
+
+/* Seçili: açık turuncu arka plan + sarı border */
+.radio-label:has(input[type="radio"]:checked) {
+    border-color: var(--color-yellow, #fdc913);
+    background-color: rgba(255, 238, 204, 1);
+}
+
+/* Seçili durumda metin rengi (arka plan sarı olunca koyu kalsın) */
+.radio-label:has(input[type="radio"]:checked)::before {
+    color: var(--color-gray-dark, #292929);
+    font-weight: 700;
+}
+
+.siparis-kalinlik {
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+.siparis-kalinlik select {
+    display: block;
+    padding: 8px 32px 8px 20px;
+    border: none;
+    border-radius: 6px;
+    font-family: Barlow, sans-serif;
+    font-size: 16px;
+    color: rgba(95, 95, 95, 1);
+    background-color: var(--color-beige, #faf9f6);
+    cursor: pointer;
+    min-width: 150px;
+    appearance: none;
+    -webkit-appearance: none;
+    width: 258px;
+    height: 56px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='rgba(95,95,95,1)' stroke-width='1.5' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+}
+
+.siparis-ek {
+    flex: 1;
+    min-width: 280px;
+}
+
+.malzeme-bilgi {
+    display: flex;
+    justify-content: space-between;
+    font-family: Barlow, sans-serif;
+    font-size: 16px;
+    color: var(--color-gray-light, #5f5f5f);
+    margin-bottom: 24px;
+    margin-top: 24px;
+}
+
+.malzeme-uyari { color: var(--color-red, #ce2829); font-weight: 700; }
+.malzeme-tamam { color: #2e7d32; font-weight: 700; }
+
+.malzeme-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 13px;
+}
+
+.malzeme-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: Barlow, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgba(95, 95, 95, 1);
+    cursor: pointer;
+    padding: 5px 8px;
+    border-radius: 5px;
+    transition: background-color 0.15s;
+}
+
+.malzeme-label:hover { background-color: #ece9e0; }
+
+.malzeme-label input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 45px;
+    height: 45px;
+    background-color: var(--color-beige);
+    border-radius: 4px;
+    cursor: pointer;
+    flex-shrink: 0;
+    position: relative;
+    transition: background-color 0.15s, border-color 0.15s;
+}
+
+.malzeme-label input[type="checkbox"]:checked {
+    background-color: var(--color-yellow, #fdc913);
+    border-color: var(--color-yellow, #fdc913);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 10'%3E%3Cpath d='M1 5l3.5 3.5L11 1' stroke='%23292929' stroke-width='2' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 11px;
+}
+
+.malzeme-label input[type="checkbox"]:hover:not(:disabled) {
+    border-color: var(--color-yellow, #fdc913);
+}
+
+.malzeme-label input[type="checkbox"]:disabled {
+    opacity: 0.35;
+    cursor: not-allowed;
+}
+
+.siparis-notu {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    padding-top: 24px;
+    margin-bottom: 30px;
+}
+
+.siparis-notu input{
+    background-color: var(--color-beige);
+}
+
+.input-grup {
+    flex: 1;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-grup h2 {
+    font-family: Barlow, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--color-gray-dark, #292929);
+    margin-bottom: 8px;
+}
+
+.input-grup input[type="text"],
+.input-grup textarea {
+    padding: 10px 14px;
+    border: 1px solid var(--color-beige);
+    border-radius: 6px;
+    font-family: Barlow, sans-serif;
+    font-size: 15px;
+    background-color: var(--color-beige);
+    transition: border-color 0.2s;
+    width: 100%;
+}
+
+.input-grup input[type="text"]:focus,
+.input-grup textarea:focus {
+    outline: none;
+    border-color: var(--color-yellow, #fdc913);
+    box-shadow: 0 0 0 2px rgba(253, 201, 19, 0.2);
+}
+
+.input-grup textarea { resize: vertical; }
+
+.hata-mesaj {
+    color: var(--color-red, #ce2829);
+    font-size: 12px;
+    font-family: Barlow, sans-serif;
+    margin-top: 4px;
+}
+
+/* API / Ağ hata bildirimi — siparis-ver butonunun üstünde çıkar */
+.api-hata {
+    font-size: 14px;
+    font-weight: 600;
+    background-color: #fdecea;
+    border: 1px solid var(--color-red, #ce2829);
+    border-radius: 6px;
+    padding: 10px 14px;
+    margin-bottom: 8px;
+}
+
+/* Select focus stili — diğer inputlarla tutarlı */
+.siparis-kalinlik select:focus {
+    outline: none;
+    border-color: var(--color-yellow, #fdc913);
+    box-shadow: 0 0 0 2px rgba(253, 201, 19, 0.2);
+}
+
+.siparis-section{
+    display: flex;
+    border-top: 2px solid #e0ddd6;
+    gap: 6px;
+    margin-bottom: 20px;
+}
+
+.siparis-ver {
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    flex-grow: 1;
+}
+
+.counter-alan {
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    align-self: center;
+    gap: 0;
+}
+
+.counter-text{
+    display: none;
+}
+
+.counter-btn {
+    width: 48px;
+    height: 48px;
+    border: none;
+    background-color: var(--color-yellow, #fdc913);
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    transition: opacity 0.15s;
+    color: var(--color-gray-dark, #292929);
+}
+
+.counter-btn:hover { opacity: 0.85; }
+
+.counter-sayi {
+    width: 56px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Barlow, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--color-gray-dark, #292929);
+    background-color: white;
+    border: 1px solid #ddd;
+}
+
+.siparis-ozet {
+    background-color: var(--color-beige);
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    border: 1px solid rgba(217, 217, 217, 1);
+    border-radius: 6px;
+    min-width: 200px;
+    padding: 49px;
+}
+
+.siparis-ozet h2 {
+    font-family: Barlow, sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--color-gray-dark, #292929);
+    margin-bottom: 24px;
+}
+
+.ozet-satir {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+    font-family: Barlow, sans-serif;
+    font-size: 18px;
+    color: var(--color-gray-light, #5f5f5f);
+}
+
+.toplam-satir {
+    font-weight: 700;
+    color: var(--color-red);
+    font-size: 18px;
+    padding-top: 6px;
+    margin-top: 2px;
+}
+
+.siparis-ver-buton {
+    grid-area: buton;
+    width: 100%;
+    height: 62px;
+    background-color: var(--color-yellow, #fdc913);
+    border: none;
+    border-radius: 6px;
+    padding: 14px 40px;
+    font-family: Barlow, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    color: var(--color-gray-dark, #292929);
+    cursor: pointer;
+    transition: opacity 0.2s, transform 0.1s;
+    white-space: nowrap;
+}
+
+.siparis-ver-buton:hover:not(:disabled) {
+    opacity: 0.88;
+    transform: translateY(-1px);
+}
+
+.siparis-ver-buton:disabled {
+    background-color: #d0ccc4;
+    color: #999;
+    cursor: not-allowed;
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .siparis-header { padding: 16px 0; height: 130px; }
+
+    .pizza-form-banner { display: none;}
+
+    .siparis-content { padding: 10px 20px 40px; max-width: 532px;}
+
+    .pizza-baslik { font-size: 22px; }
+
+    .sol-panel {
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 40px;
+        margin-bottom: 20px;
+    }
+
+    .secimler-alani {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .malzeme-bilgi{
+        flex-direction: column;
+    }
+
+    .malzeme-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .siparis-ver {
+        gap: 30px;
+    }
+
+    .siparis-section{
+        flex-direction: column;
+    }
+    .counter-text{
+        display: block;
+        padding-top:30px;
+        font-family: Barlow,sans-serif;
+        font-weight: bold;
+        font-size: 24px;
+    }
+
+    .siparis-alt-satir{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

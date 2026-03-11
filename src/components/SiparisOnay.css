@@ -1,0 +1,137 @@
+/* ── SİPARİŞ ONAY SAYFASI (success.png) ── */
+
+.onay-page {
+    background-color: var(--color-red, #ce2829);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.onay-icerik {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 64px 24px 64px;
+    max-width: 586px;
+}
+
+/* Logo — kırmızı arka plan üstünde direkt */
+.onay-logo {
+    height: 44px;
+    width: auto;
+    margin-bottom: 64px;
+}
+
+/* "lezzetin yolda" — Satisfy sarı italic */
+.onay-slogan {
+    font-family: "Satisfy", cursive;
+    font-size: 32px;
+    color: var(--color-yellow, #fdc913);
+    margin-bottom: 4px;
+}
+
+/* "SİPARİŞ ALINDI" — büyük Roboto Condensed */
+.onay-baslik {
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 300;
+    font-size: 86px;
+    line-height: 92px;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 1.5px;
+    margin-bottom: 60px;
+}
+
+/* Yatay ayırıcı çizgi */
+.onay-separator {
+    width: 100%;
+    border: none;
+    border-top: 1px solid white;
+    margin: 0 0 32px;
+}
+
+/* Pizza adı */
+.onay-pizza-isim {
+    font-family: Barlow, sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 32px;
+}
+
+.onay-detaylar {
+    width: 40%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 32px;
+}
+
+.onay-detaylar p {
+    font-family: Barlow, sans-serif;
+    font-size: 16px;
+    color: white;
+    line-height: 1.5;
+}
+
+.onay-label {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.onay-detaylar p strong {
+    color: white;
+    font-weight: 700;
+}
+
+/* Sipariş toplamı kartı — beyaz kutu, kompakt */
+.onay-ozet-kart {
+    background:none;
+    border: 1px solid white;
+    border-radius: 6px;
+    padding: 42px 49px;
+    width: 100%;
+    max-width: 350px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: white !important;
+    margin-top: 36px;
+}
+
+.onay-ozet-baslik {
+    font-family: Barlow, sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+
+.onay-ozet-satir {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    font-family: Barlow, sans-serif;
+    font-size: 18px;
+}
+
+@media (max-width: 768px) {
+
+    .onay-page{
+        max-width: 100%;
+    }
+    .onay-icerik{
+        max-width: 80%;
+    }
+    .onay-baslik {
+        font-size: 56px;
+        letter-spacing: 1px;
+    }
+    .onay-ozet-kart {
+        padding: 20px;
+    }
+}
