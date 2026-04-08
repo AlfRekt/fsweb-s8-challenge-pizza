@@ -6,18 +6,18 @@ function Footer(){
         <footer className="dflexc">
           <div className="footer-content dflexr">
             <div className="contacts-section">
-              <img src="../images/iteration-2-images/footer/logo-footer.svg" alt="logo" className="footer-logo" />
+              <img src="/images/iteration-2-images/footer/logo-footer.svg" alt="logo" className="footer-logo" />
               <ul>
                 <li>
-                  <img src="../images/iteration-2-images/footer/icons/icon-1.png"/>
+                  <img src="/images/iteration-2-images/footer/icons/icon-1.png"/>
                   <p>341 Londonderry Road, Istanbul Türkiye</p>
                 </li>
                 <li>
-                  <img src="../images/iteration-2-images/footer/icons/icon-2.png"/>
+                  <img src="/images/iteration-2-images/footer/icons/icon-2.png"/>
                   <p>aciktim@teknolojikyemekler.com</p>
                 </li>
                 <li>
-                  <img src="../images/iteration-2-images/footer/icons/icon-3.png"/>
+                  <img src="/images/iteration-2-images/footer/icons/icon-3.png"/>
                   <p>+90 216 123 45 67</p>
                 </li>
               </ul>
@@ -36,12 +36,12 @@ function Footer(){
             <div className="instagram-section dflexc">
               <h2>Instagram</h2>
               <div className="pics dflexr">
-                <img src="../images/iteration-2-images/footer/insta/li-0.png" />
-                <img src="../images/iteration-2-images/footer/insta/li-1.png"/>
-                <img src="../images/iteration-2-images/footer/insta/li-2.png"/>
-                <img src="../images/iteration-2-images/footer/insta/li-3.png" />
-                <img src="../images/iteration-2-images/footer/insta/li-4.png"/>
-                <img src="../images/iteration-2-images/footer/insta/li-5.png"/>
+                <img src="/images/iteration-2-images/footer/insta/li-0.png" />
+                <img src="/images/iteration-2-images/footer/insta/li-1.png"/>
+                <img src="/images/iteration-2-images/footer/insta/li-2.png"/>
+                <img src="/images/iteration-2-images/footer/insta/li-3.png" />
+                <img src="/images/iteration-2-images/footer/insta/li-4.png"/>
+                <img src="/images/iteration-2-images/footer/insta/li-5.png"/>
               </div>
             </div>
           </div>

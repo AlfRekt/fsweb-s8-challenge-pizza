@@ -104,7 +104,7 @@ function SiparisFormu({ setSiparisData, setSayfa }) {
             <section className="siparisPage dflexc">
                 <header className="siparis-header">
                     <img
-                        src="../images/iteration-1-images/logo.svg"
+                        src="/images/iteration-1-images/logo.svg"
                         alt="Teknolojik Yemekler"
                         className="siparis-logo"
                     />
@@ -112,7 +112,7 @@ function SiparisFormu({ setSiparisData, setSayfa }) {
                 <div className='pizza-ozet'>
                         <div className='wrapper'>
                             <img
-                            src="../images/iteration-2-images/pictures/form-banner.png"
+                            src="/images/iteration-2-images/pictures/form-banner.png"
                             alt="Position Absolute Acı Pizza"
                             className="pizza-form-banner"
                         />

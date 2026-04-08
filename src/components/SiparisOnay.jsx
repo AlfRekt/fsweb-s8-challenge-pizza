@@ -13,7 +13,7 @@ function SiparisOnay({ siparisData }) {
         <div className="onay-page">
             <div className="onay-icerik">
                 <img
-                    src="../images/iteration-1-images/logo.svg"
+                    src="/images/iteration-1-images/logo.svg"
                     alt="Teknolojik Yemekler"
                     className="onay-logo"
                 />

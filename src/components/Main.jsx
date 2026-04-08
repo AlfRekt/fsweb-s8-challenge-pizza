@@ -5,7 +5,7 @@ function Main({ setSayfa }){
     <>
         <section className="home-page dflexc">
           <div className="home-page-content">
-            <img src="../images/iteration-1-images/logo.svg" alt="logo" className="home-page-logo" />
+            <img src="/images/iteration-1-images/logo.svg" alt="logo" className="home-page-logo" />
             <p>fırsatı kaçırma</p>
             <p>KOD ACIKTIRIR </p>
             <p> PIZZA, DOYURUR</p>
@@ -17,32 +17,32 @@ function Main({ setSayfa }){
           <nav>
             <ul className="dflexr">
               <li><a href="#">
-                  <img src="../images/iteration-2-images/icons/1.svg" alt="kore"/>
+                  <img src="/images/iteration-2-images/icons/1.svg" alt="kore"/>
                   <span className="menu-text">YENİ! Kore</span>
                 </a>
               </li>
               <li><a href="#">
-                  <img src="../images/iteration-2-images/icons/2.svg" alt="pizza"/>
+                  <img src="/images/iteration-2-images/icons/2.svg" alt="pizza"/>
                   <span className="menu-text">Pizza</span>
                 </a>
               </li>
               <li><a href="#">
-                  <img src="../images/iteration-2-images/icons/3.svg" alt="burger"/>
+                  <img src="/images/iteration-2-images/icons/3.svg" alt="burger"/>
                   <span className="menu-text">Burger</span>
                 </a>
               </li>
               <li><a href="#">
-                  <img src="../images/iteration-2-images/icons/4.svg" alt="kızartmalar"/>
+                  <img src="/images/iteration-2-images/icons/4.svg" alt="kızartmalar"/>
                   <span className="menu-text">Kızartmalar</span>
                 </a>
               </li>
               <li><a href="#">
-                  <img src="../images/iteration-2-images/icons/5.svg" alt="fast food"/>
+                  <img src="/images/iteration-2-images/icons/5.svg" alt="fast food"/>
                   <span className="menu-text">Fast food</span>
                 </a>
               </li>
               <li><a href="#">
-                  <img src="../images/iteration-2-images/icons/6.svg" alt="gazlı içecek"/>
+                  <img src="/images/iteration-2-images/icons/6.svg" alt="gazlı içecek"/>
                   <span className="menu-text">Gazlı İçecek</span>
                 </a>
               </li>
@@ -81,32 +81,32 @@ function Main({ setSayfa }){
           <nav className="menu-nav">
             <ul className="dflexr">
               <li><button href="#">
-                    <img src="../images/iteration-2-images/icons/1.svg" alt="kore"/>
+                    <img src="/images/iteration-2-images/icons/1.svg" alt="kore"/>
                     <span className="menu-text">Ramen</span>
                   </button>
                 </li>
                 <li><button href="#" className="active">
-                    <img src="../images/iteration-2-images/icons/2.svg" alt="pizza"/>
+                    <img src="/images/iteration-2-images/icons/2.svg" alt="pizza"/>
                     <span className="menu-text">Pizza</span>
                   </button>
                 </li>
                 <li><button href="#">
-                    <img src="../images/iteration-2-images/icons/3.svg" alt="burger"/>
+                    <img src="/images/iteration-2-images/icons/3.svg" alt="burger"/>
                     <span className="menu-text">Burger</span>
                   </button>
                 </li>
                 <li><button href="#">
-                    <img src="../images/iteration-2-images/icons/4.svg" alt="kızartmalar"/>
+                    <img src="/images/iteration-2-images/icons/4.svg" alt="kızartmalar"/>
                     <span className="menu-text">Kızartmalar</span>
                   </button>
                 </li>
                 <li><button href="#">
-                    <img src="../images/iteration-2-images/icons/5.svg" alt="fast food"/>
+                    <img src="/images/iteration-2-images/icons/5.svg" alt="fast food"/>
                     <span className="menu-text">Fast food</span>
                   </button>
                 </li>
                 <li><button href="#">
-                    <img src="../images/iteration-2-images/icons/6.svg" alt="gazlı içecek"/>
+                    <img src="/images/iteration-2-images/icons/6.svg" alt="gazlı içecek"/>
                     <span className="menu-text">Gazlı İçecek</span>
                   </button>
                 </li>
@@ -114,7 +114,7 @@ function Main({ setSayfa }){
           </nav>
           <div className="main-content menu">
             <div className="menu-item dflexc">
-                <img src="../images/iteration-2-images/pictures/food-1.png" alt="terminal"/>
+                <img src="/images/iteration-2-images/pictures/food-1.png" alt="terminal"/>
                 <div className="label dflexc">
                   <h2>Terminal Pizza</h2>
                   <div className="info dflexr">
@@ -127,7 +127,7 @@ function Main({ setSayfa }){
                 </div>
               </div>
               <div className="menu-item dflexc">
-                <img src="../images/iteration-2-images/pictures/food-2.png" alt="aci"/>
+                <img src="/images/iteration-2-images/pictures/food-2.png" alt="aci"/>
                 <div className="label dflexc">
                   <h2>Position Absolute Acı Pizza</h2>
                   <div className="info dflexr">
@@ -140,7 +140,7 @@ function Main({ setSayfa }){
                 </div>
               </div>
               <div className="menu-item dflexc">
-                <img src="../images/iteration-2-images/pictures/food-3.png" alt="burger"/>
+                <img src="/images/iteration-2-images/pictures/food-3.png" alt="burger"/>
                 <div className="label dflexc">
                   <h2>useEffect Tavuklu Burger</h2>
                   <div className="info dflexr">
